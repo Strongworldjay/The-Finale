@@ -22,7 +22,7 @@ export const LEVEL8 = [
         descriptionMd:
             "As you cast the spell, choose antipathy or sympathy, and target one creature or object that is Huge or smaller. Then specify a kind of creature (e.g., red dragons, goblins, vampires). A creature of the chosen kind that comes within 120 feet of the target must make a Wisdom saving throw. Your choice determines the effect on a failed save:\n\nAntipathy. The creature gains the Frightened condition and must use its movement each turn to move away from the target by the safest route.\n\nSympathy. The creature is Charmed and must use its movement each turn to move as close as possible to the target by the safest route. If within 5 feet of the target, it can’t willingly move away. If the target damages the charmed creature, that creature can attempt a save to end the effect (see below).\n\nEnding the Effect. If the affected creature ends its turn more than 120 feet from the target, it makes a Wisdom saving throw. On a success, the effect ends for that creature. A creature that succeeds on this save is immune to the effect for 1 minute, after which it can be affected again.",
         scalingMd: "",
-        imagePath: spellImgUrl("antipathysympathy")
+        imagePath: spellImgUrl("antipathy_sympathy")
     },
     {
         slug: slugify("Bury"),

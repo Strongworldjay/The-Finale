@@ -25,6 +25,33 @@ export const LEVEL6 = [
         imagePath: spellImgUrl("babaswalkinghut")
     },
     {
+  slug: slugify("Lungburst"),
+  name: "Lungburst",
+  classes: ["Sorcerer", "Warlock", "Wizard"],
+  spellLevel: 6,
+  school: "Evocation",
+  castingTime: "1 action",
+  duration: "Instantaneous",
+  range: "90 feet",
+  area: "Single target",
+  tags: ["Heliana's Guide to Monster Hunting", "Biomancy", "New"],
+  saveRequired: "Constitution",
+  attackType: "None",
+  damageTypes: ["Thunder", "Necrotic"],
+  conditions: ["Suffocating"],
+  components: { verbal: true, somatic: true, material: false, materialText: "" },
+  concentration: false,
+  ritual: false,
+  descriptionMd:
+    "You cause rapid, unpredictable changes in the internal air pressure of one creature you can see within range, rupturing its breathing apparatus. The target must make a Constitution saving throw. A creature holding its breath makes this saving throw with Disadvantage. " +
+    "On a failed save, the target takes 7d6 Thunder damage and 7d6 Necrotic damage and immediately begins suffocating. On a successful save, it takes half as much damage and doesn’t begin suffocating.\n\n" +
+    "A creature suffocating in this way repeats the saving throw at the end of each of its turns, ending the suffocation on itself on a success.\n\n" +
+    "A creature that doesn’t need to breathe is immune to this spell. A greater restoration, heal, or wish spell can restore a creature’s ability to breathe and end this suffocation.",
+  scalingMd:
+    "**Using a Higher-Level Spell Slot.** The Thunder and Necrotic damage each increase by 1d6 for each spell slot level above 6.",
+  imagePath: spellImgUrl("lungburst")
+},
+    {
         slug: slugify("Beam of Annihilation"),
         name: "Beam of Annihilation",
         classes: ["Sorcerer", "Wizard"],

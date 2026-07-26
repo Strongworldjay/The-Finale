@@ -3355,27 +3355,80 @@ export const LEVEL1 = [
       "**Using a Higher-Level Spell Slot.** Damage increases by 1d8 per slot level above 1."
   },
   {
-    slug: slugify("Unseen Servant"),
-    name: "Unseen Servant",
-    classes: ["Bard", "Warlock", "Wizard"],
-    spellLevel: 1,
-    school: "Conjuration",
-    castingTime: "1 action (ritual)",
-    duration: "1 hour",
-    range: "60 feet",
-    area: "1 invisible servant",
-    tags: ["Player's Handbook", "Control"],
-    saveRequired: "None",
-    attackType: "None",
-    damageTypes: [],
-    conditions: [],
-    components: { verbal: true, somatic: true, material: true, materialText: "a bit of string and of wood" },
-    concentration: false,
-    ritual: true,
-    descriptionMd:
-      "Create an Invisible, mindless, shapeless Medium force in an unoccupied space on the ground within range. It has AC 10, 1 HP, STR 2, and can’t attack. If it drops to 0 HP, the spell ends.\n\nAs a Bonus Action once each turn, you command it to move 15 ft and interact with an object, performing simple tasks (fetching, cleaning, mending, lighting fires, serving, pouring, etc.). If commanded beyond 60 ft from you, the spell ends.",
-    scalingMd: ""
+  slug: slugify("Unseen Servant"),
+  name: "Unseen Servant",
+  classes: ["Bard", "Warlock", "Wizard"],
+  spellLevel: 1,
+  school: "Conjuration",
+  castingTime: "1 action (ritual)",
+  duration: "1 hour",
+  range: "60 feet",
+  area: "One invisible servant",
+  tags: ["Player's Handbook", "Summoning", "Utility"],
+  saveRequired: "None",
+  attackType: "None",
+  damageTypes: [],
+  conditions: [],
+  components: {
+    verbal: true,
+    somatic: true,
+    material: true,
+    materialText: "a bit of string and a piece of wood"
   },
+  concentration: false,
+  ritual: true,
+  descriptionMd:
+    "You create an Unseen Servant in an unoccupied space on the ground within range. It uses the stat block below and disappears when it drops to 0 Hit Points or when the spell ends.\n\n" +
+    "The servant is friendly to you and your allies. It can’t take actions or move unless you command it. As a Bonus Action, you can command the servant to move up to its Speed and take the Interact action. It can perform simple tasks that a human servant could perform, such as fetching objects, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks.\n\n" +
+    "Once given a command, the servant continues performing the task to the best of its ability until it completes the task or receives a new command. The spell ends if the servant is ever more than 60 feet away from you.\n\n" +
+    "### Unseen Servant\n" +
+    "*Medium Construct, Unaligned*\n\n" +
+    "**Armor Class** 10  \n" +
+    "**Hit Points** 1  \n" +
+    "**Speed** 15 ft.\n\n" +
+    "| STR | DEX | CON | INT | WIS | CHA |\n" +
+    "|---:|---:|---:|---:|---:|---:|\n" +
+    "| 2 (−4) | 10 (+0) | 10 (+0) | 1 (−5) | 10 (+0) | 1 (−5) |\n\n" +
+    "**Damage Immunities** Poison, Psychic  \n" +
+    "**Condition Immunities** Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned, Unconscious  \n" +
+    "**Senses** Blindsight 30 ft. (blind beyond this radius), Passive Perception 10  \n" +
+    "**Languages** Understands the languages you speak but can’t speak  \n" +
+    "**Challenge** 0 (0 XP; PB +2)\n\n" +
+    "**Invisible Force.** The servant has the Invisible condition. This invisibility can’t be ended by the servant attacking, dealing damage, or casting a spell, since it can do none of those things.\n\n" +
+    "**Mindless Servant.** The servant can’t attack, attune to magic items, activate magic items, or perform any task that requires an ability check.\n\n" +
+    "**Shapeless Form.** The servant can move through a space as narrow as 1 inch wide without squeezing, but it can’t move through creatures or solid objects.\n\n" +
+    "#### Actions\n\n" +
+    "**Interact.** The servant interacts with one object or performs one simple task it has been commanded to complete.",
+  scalingMd: "",
+  imagePath: spellImgUrl("unseenservant")
+},
+{
+  slug: slugify("Signal Flare"),
+  name: "Signal Flare",
+  classes: ["Bard", "Cleric", "Ranger", "Sorcerer", "Wizard"],
+  spellLevel: 1,
+  school: "Evocation",
+  castingTime: "1 action",
+  duration: "Instantaneous",
+  range: "300 feet",
+  area: "20-foot-radius sphere",
+  tags: ["Heliana's Guide to Monster Hunting", "Debuff", "New"],
+  saveRequired: "Constitution",
+  attackType: "None",
+  damageTypes: [],
+  conditions: ["Blinded"],
+  components: { verbal: true, somatic: false, material: false, materialText: "" },
+  concentration: false,
+  ritual: false,
+  descriptionMd:
+    "You launch a glowing mote toward a point you can see within range. When it reaches that point, it detonates in a brilliant explosion of color and concussive sound that fills a 20-foot-radius sphere.\n\n" +
+    "The explosion can be heard from up to 1 mile away, and its light can be seen from up to 3 miles away in clear conditions.\n\n" +
+    "Each hostile creature in the sphere must make a Constitution saving throw. On a failed save, a creature has the [condition]Blinded[/condition] condition until the end of its next turn. On a successful save, it isn’t Blinded.\n\n" +
+    "The explosion deals no damage.",
+  scalingMd:
+    "**Using a Higher-Level Spell Slot.** The radius of the explosion increases by 10 feet for each spell slot level above 1.",
+  imagePath: spellImgUrl("signalflare")
+},
   {
     slug: slugify("Witch Bolt"),
     name: "Witch Bolt",

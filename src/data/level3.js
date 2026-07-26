@@ -2403,6 +2403,42 @@ export const LEVEL3 = [
         imagePath: spellImgUrl("calllightning")
     },
     {
+  slug: slugify("Intercept"),
+  name: "Intercept",
+  classes: ["Bard", "Sorcerer", "Warlock", "Wizard"],
+  spellLevel: 3,
+  school: "Divination",
+  castingTime: "1 action",
+  duration: "Instantaneous",
+  range: "30 feet",
+  area: "30-foot-radius sphere",
+  tags: ["Heliana's Guide to Monster Hunting", "Communication", "New"],
+  saveRequired: "None",
+  attackType: "None",
+  damageTypes: [],
+  conditions: [],
+  components: {
+    verbal: true,
+    somatic: true,
+    material: true,
+    materialText: "a copper wire twisted into a loop and a drop of ink"
+  },
+  concentration: false,
+  ritual: false,
+  descriptionMd:
+    "You establish a fixed field of magical interception centered on a point you can see within range. The field fills a 30-foot-radius sphere and is invisible unless revealed by magic or by its effects.\n\n" +
+    "While the field lasts, whenever a magical message would pass through any part of the sphere by means of a spell such as sending or similar magic, you receive that message first. You immediately learn the message’s contents and the direction from which it entered the field.\n\n" +
+    "When you receive the message, choose one of the following effects:\n\n" +
+    "**Pass Through.** The message continues to its intended recipient normally.\n\n" +
+    "**Hold.** The message is delayed and doesn’t reach its intended recipient unless you take an action while within 1 mile of the field to release it. If you don’t release the message within 1 minute, it is lost.\n\n" +
+    "**Block.** The message is intercepted and fails to reach its intended recipient.\n\n" +
+    "You know when a held message expires and when a passed-through message leaves the field.\n\n" +
+    "This spell intercepts only magical messages that travel through the area. It doesn’t affect magical effects that merely target a creature in the area without transmitting a message through it.",
+  scalingMd:
+    "**Using a Higher-Level Spell Slot.** When you cast this spell using a spell slot of 5th level or higher, the radius increases by 30 feet for each slot level above 4.",
+  imagePath: spellImgUrl("intercept")
+},
+    {
         slug: slugify("Clairvoyance"),
         name: "Clairvoyance",
         classes: ["Bard", "Cleric", "Sorcerer", "Wizard"],

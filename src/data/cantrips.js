@@ -26,6 +26,32 @@ export const CANTRIPS = [
     imagePath: spellImgUrl("acidsplash")
   },
   {
+  slug: slugify("Magnetic Attraction"),
+  name: "Magnetic Attraction",
+  classes: ["Druid", "Sorcerer", "Warlock", "Wizard"],
+  spellLevel: 0,
+  school: "Evocation",
+  castingTime: "1 action",
+  duration: "Instantaneous",
+  range: "90 feet",
+  area: "Single target",
+  tags: ["Heliana's Guide to Monster Hunting", "Damage", "Control", "New"],
+  saveRequired: "Strength",
+  attackType: "Ranged",
+  damageTypes: ["Force"],
+  conditions: ["Prone"],
+  components: { verbal: true, somatic: true, material: false, materialText: "" },
+  concentration: false,
+  ritual: false,
+  descriptionMd:
+    "A near-invisible pulse of arcanomagnetic energy shoots toward one creature within range. Make a ranged spell attack against the target. " +
+    "On a hit, the target takes 1d6 Force damage and must succeed on a Strength saving throw or have the [condition]Prone[/condition] condition. " +
+    "A creature made of ferrous metal or wearing ferrous armor has Disadvantage on this saving throw.",
+  scalingMd:
+    "**Cantrip Upgrade.** The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+  imagePath: spellImgUrl("magneticattraction")
+},
+  {
     slug: slugify("Blade Ward"),
     name: "Blade Ward",
     classes: ["Bard", "Sorcerer", "Warlock", "Wizard"],

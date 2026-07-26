@@ -923,6 +923,83 @@ export const LEVEL2 = [
         imagePath: spellImgUrl("healingspirit")
     },
     {
+  slug: slugify("Stasis"),
+  name: "Stasis",
+  classes: ["Artificer", "Bard", "Sorcerer", "Wizard"],
+  spellLevel: 2,
+  school: "Transmutation",
+  castingTime: "1 action",
+  duration: "1 hour",
+  range: "Touch",
+  area: "One object weighing up to 10 pounds",
+  tags: ["Heliana's Guide to Monster Hunting", "Utility", "Dunamancy", "New"],
+  saveRequired: "None",
+  attackType: "None",
+  damageTypes: [],
+  conditions: [],
+  components: {
+    verbal: true,
+    somatic: true,
+    material: true,
+    materialText: "gold dust worth at least 25 GP, which the spell consumes"
+  },
+  concentration: false,
+  ritual: false,
+  descriptionMd:
+    "You touch an object that weighs no more than 10 pounds and cause it to become magically fixed in place. You and any creatures you designate when you cast the spell can move the object normally. You can also set a password. When the password is spoken within 5 feet of the object, the spell is suppressed for 1 minute.\n\n" +
+    "If the object is fixed in the air, it can support up to 4,000 pounds. If more weight is placed on it, the object falls. Otherwise, a creature can take an action to make a Strength (Athletics) check against your spell save DC. On a successful check, the creature can move the object up to 10 feet.",
+  scalingMd:
+    "**Using a Higher-Level Spell Slot.** If you cast this spell using a level 4 or 5 spell slot, the DC to move the object increases by 5, the object can support up to 8,000 pounds, and the duration increases to 24 hours. If you cast this spell using a level 6 or higher spell slot, the DC increases by 10, the object can support up to 20,000 pounds, and the effect lasts until dispelled.",
+  imagePath: spellImgUrl("stasis")
+},
+{
+  slug: slugify("Quick Conceal"),
+  name: "Quick Conceal",
+  classes: ["Bard", "Sorcerer", "Warlock", "Wizard"],
+  spellLevel: 2,
+  school: "Conjuration",
+  castingTime: "1 action",
+  duration: "Concentration, up to 1 hour",
+  range: "Self",
+  area: "One held object",
+  tags: ["Heliana's Guide to Monster Hunting", "Utility", "Dunamancy", "New"],
+  saveRequired: "None",
+  attackType: "None",
+  damageTypes: [],
+  conditions: [],
+  components: { verbal: false, somatic: true, material: false, materialText: "" },
+  concentration: true,
+  ritual: true,
+  descriptionMd:
+    "You flick your wrist, causing one object you are holding to vanish into an extradimensional space. The object can weigh no more than 5 pounds, and no other creature can be holding it when you cast the spell.\n\n" +
+    "Until the spell ends, you can take a Magic action to summon the object into your free hand or return it to the extradimensional space. If the object is still in the extradimensional space when the spell ends, it appears at your feet in your space.",
+  scalingMd: "",
+  imagePath: spellImgUrl("quickconceal")
+},
+{
+  slug: slugify("Skywrite"),
+  name: "Skywrite",
+  classes: ["Artificer", "Bard", "Druid", "Wizard"],
+  spellLevel: 2,
+  school: "Transmutation",
+  castingTime: "1 action (ritual)",
+  duration: "Concentration, up to 1 hour",
+  range: "Sight",
+  area: "Part of the visible sky",
+  tags: ["Heliana's Guide to Monster Hunting", "Control", "Communication", "New"],
+  saveRequired: "None",
+  attackType: "None",
+  damageTypes: [],
+  conditions: [],
+  components: { verbal: true, somatic: true, material: false, materialText: "" },
+  concentration: true,
+  ritual: true,
+  descriptionMd:
+    "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of clouds and remain in place for the duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.",
+  scalingMd: "",
+  imagePath: spellImgUrl("skywrite")
+},
+    {
         slug: slugify("Icy Streaks"),
         name: "Icy Streaks",
         classes: ["Sorcerer", "Wizard"],
@@ -3404,7 +3481,7 @@ export const LEVEL2 = [
             "A shimmering green arrow streaks to a target and bursts in acid. Make a ranged spell attack: on a hit, the target takes 4d4 Acid damage and 2d4 Acid at the end of its next turn. On a miss, it takes half of the initial damage only.",
         scalingMd:
             "**Using a Higher-Level Spell Slot.** Both the initial and delayed damages increase by 1d4 per slot level above 2nd.",
-        imagePath: spellImgUrl("melfsacidarrow")
+        imagePath: spellImgUrl("acidarrow")
     },
     {
         slug: slugify("Mind Spike"),
