@@ -27,7 +27,7 @@ export default function BookOfSol() {
     <article className="scripture-page">
       <header
         className="article-hero scripture-hero"
-        style={{ backgroundImage: 'linear-gradient(90deg, rgba(7, 6, 13, .98), rgba(8, 7, 15, .68), rgba(8, 7, 15, .32)), url(/images/faith-of-heofon.webp)' }}
+        style={{ backgroundImage: 'linear-gradient(90deg, rgba(7, 6, 13, .98), rgba(8, 7, 15, .68), rgba(8, 7, 15, .32)), url(/images/book.png)' }}
       >
         <div className="hero-inner">
           <div className="breadcrumbs"><Link to="/archive">Archive</Link><span>›</span><span>Religion</span></div>

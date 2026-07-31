@@ -93,7 +93,7 @@ export const articles = [
     "aliases": [
       "Crown District"
     ],
-    "hero": "/images/heofon-sky.webp",
+    "hero": "/images/rich.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -176,7 +176,7 @@ export const articles = [
     "aliases": [
       "Art District"
     ],
-    "hero": "/images/grand-coliseum.webp",
+    "hero": "/images/party.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -236,7 +236,7 @@ export const articles = [
     "aliases": [
       "Middle District"
     ],
-    "hero": "/images/heofon-sky.webp",
+    "hero": "/images/middle.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -297,7 +297,7 @@ export const articles = [
       "Outer Walls",
       "Walls of Heöfon"
     ],
-    "hero": "/images/heofon-sky.webp",
+    "hero": "/images/outer.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -514,7 +514,7 @@ export const articles = [
       "Suns Palace",
       "Sun Palace"
     ],
-    "hero": "/images/raybeam-crown.webp",
+    "hero": "/images/palace.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -579,7 +579,7 @@ export const articles = [
     "aliases": [
       "Temple of Sol"
     ],
-    "hero": "/images/faith-of-heofon.webp",
+    "hero": "/images/temple.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -705,7 +705,7 @@ export const articles = [
       "King’s Tree",
       "Kings Tree"
     ],
-    "hero": "/images/heofon-sky.webp",
+    "hero": "/images/tree.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -1021,7 +1021,7 @@ export const articles = [
       "Royal Triplets",
       "Triplets"
     ],
-    "hero": "/images/raybeam-crown.webp",
+    "hero": "/images/three.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -1376,7 +1376,7 @@ export const articles = [
       "Radiant Souls",
       "Radiant Soul"
     ],
-    "hero": "/images/faith-of-heofon.webp",
+    "hero": "/images/guards.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -1609,7 +1609,7 @@ export const articles = [
       "Divine Few",
       "Enlightened and Divine Few"
     ],
-    "hero": "/images/faith-of-heofon.webp",
+    "hero": "/images/chosen.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -1667,7 +1667,7 @@ export const articles = [
     "aliases": [
       "Silent Worshippers"
     ],
-    "hero": "/images/heofon-sky.webp",
+    "hero": "/images/cloaks.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -1729,7 +1729,7 @@ export const articles = [
     "aliases": [
       "Doombringers"
     ],
-    "hero": "/images/veil-district.webp",
+    "hero": "/images/doom.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -1954,7 +1954,7 @@ export const articles = [
       "Harvest of Light",
       "Grand Coliseum Games"
     ],
-    "hero": "/images/grand-coliseum.webp",
+    "hero": "/images/festival.png",
     "heroPosition": "center",
     "infobox": [
       [
@@ -2128,7 +2128,7 @@ export const articles = [
       "The Faithful",
       "The Blessed"
     ],
-    "hero": "/images/heofon-sky.webp",
+    "hero": "/images/society.png",
     "heroPosition": "center",
     "infobox": [
       [

@@ -483,7 +483,7 @@ kbd {
 .section-title-row > a { display: inline-flex; align-items: center; gap: 8px; color: var(--gold-light); font-size: 12px; white-space: nowrap; }
 .featured-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .book-feature { min-height: 600px; display: grid; grid-template-columns: 1.12fr .88fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #0d0b12; }
-.book-feature-image { background: linear-gradient(90deg, transparent 68%, #0d0b12), url('/images/faith-of-heofon.webp') center/cover; }
+.book-feature-image { background: linear-gradient(90deg, transparent 68%, #0d0b12), url('/images/book.png') center/cover; }
 .book-feature-content { display: flex; flex-direction: column; justify-content: center; align-items: start; padding: 75px clamp(35px, 6vw, 90px) 75px 45px; }
 .book-feature-content > p { color: #b8afbc; line-height: 1.8; }
 .book-feature blockquote { margin: 20px 0 28px; padding-left: 18px; font-size: 18px; }
