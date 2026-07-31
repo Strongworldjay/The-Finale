@@ -448,7 +448,7 @@ kbd {
 
 /* Home */
 .home-hero { min-height: calc(100vh - var(--topbar)); position: relative; display: flex; align-items: center; overflow: hidden; }
-.home-hero-image { position: absolute; inset: 0; background: url('/images/heofon-sky.webp') center/cover no-repeat; transform: scale(1.015); }
+.home-hero-image { position: absolute; inset: 0; background: url('/images/city.png') center/cover no-repeat; transform: scale(1.015); }
 .home-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,6,13,.98) 0%, rgba(7,6,13,.8) 48%, rgba(7,6,13,.23)), linear-gradient(0deg, rgba(7,6,13,.85), transparent 42%); }
 .home-hero-content { position: relative; z-index: 2; width: min(1120px, calc(100% - 80px)); margin: 0 auto; padding-bottom: 90px; }
 .home-sigil { display: grid; place-items: center; width: 62px; height: 62px; margin-bottom: 24px; border: 1px solid var(--gold-dark); border-radius: 50%; color: var(--gold-light); background: rgba(14,11,19,.55); }
@@ -576,7 +576,7 @@ kbd {
   .scripture-intro-wrap { grid-template-columns: 1fr; }
   .book-nav { width: 100%; }
   .book-feature { grid-template-columns: 1fr; }
-  .book-feature-image { min-height: 420px; background: linear-gradient(0deg, #0d0b12, transparent 55%), url('/images/faith-of-heofon.webp') center/cover; }
+  .book-feature-image { min-height: 420px; background: linear-gradient(0deg, #0d0b12, transparent 55%), url('/images/book.png') center/cover; }
   .book-feature-content { padding: 50px 28px 70px; }
   .contradiction-grid { grid-template-columns: 1fr; }
 }
