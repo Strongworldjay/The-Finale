@@ -1,3 +1,0 @@
-export const Page=({eyebrow,title,lead,hero,children})=><article className="page"><header className="page-hero" style={hero?{backgroundImage:`linear-gradient(90deg,rgba(10,8,22,.96),rgba(10,8,22,.45)),url(${hero})`}:{}}><div><span className="eyebrow">{eyebrow}</span><h1>{title}</h1>{lead&&<p>{lead}</p>}</div></header><div className="page-body">{children}</div></article>;
-export const Section=({id,title,children})=><section id={id} className="lore-section"><h2>{title}</h2>{children}</section>;
-export const Card=({title,children,to})=><a className="lore-card" href={to}><h3>{title}</h3><p>{children}</p><span>Explore entry →</span></a>;

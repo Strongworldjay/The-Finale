@@ -1,42 +1,5 @@
-# Dependencies
 node_modules/
-
-# Production build
 dist/
-build/
-
-# Environment variables
-.env
-.env.*
-!.env.example
-
-# Local logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Editor settings
-.vscode/
-.idea/
-
-# Operating system files
 .DS_Store
-Thumbs.db
-
-# Temporary files
-*.tmp
-*.temp
-*.swp
-
-# Vite cache
-.vite/
-
-# Test coverage
-coverage/
-
-# Local deployment folders
-.vercel/
-.netlify/
+*.local
+.vscode/

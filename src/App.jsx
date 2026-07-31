@@ -1,2 +1,22 @@
-import {Routes,Route} from 'react-router-dom';import Layout from './components/Layout.jsx';import Home from './pages/Home.jsx';import Districts from './pages/Districts.jsx';import ThreeDawns from './pages/ThreeDawns.jsx';import Faith from './pages/Faith.jsx';import Governance from './pages/Governance.jsx';import Organizations from './pages/Organizations.jsx';import Academy from './pages/Academy.jsx';import Laws from './pages/Laws.jsx';import Characters from './pages/Characters.jsx';
-export default function App(){return <Routes><Route element={<Layout/>}><Route path="/" element={<Home/>}/><Route path="/districts" element={<Districts/>}/><Route path="/three-dawns" element={<ThreeDawns/>}/><Route path="/faith" element={<Faith/>}/><Route path="/governance" element={<Governance/>}/><Route path="/organizations" element={<Organizations/>}/><Route path="/academy" element={<Academy/>}/><Route path="/laws" element={<Laws/>}/><Route path="/characters" element={<Characters/>}/></Route></Routes>}
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout.jsx';
+import Home from './pages/Home.jsx';
+import ArchiveIndex from './pages/ArchiveIndex.jsx';
+import ArticlePage from './pages/ArticlePage.jsx';
+import BookOfSol from './pages/BookOfSol.jsx';
+import NotFound from './pages/NotFound.jsx';
+
+export default function App() {
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/archive" element={<ArchiveIndex />} />
+        <Route path="/book-of-sol" element={<BookOfSol />} />
+        <Route path="/wiki/:slug" element={<ArticlePage />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  );
+}
