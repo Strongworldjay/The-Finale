@@ -1,34 +1,40 @@
-# The Remarkable Tome
+# Heöfon — Archive of Radiance
 
-Responsive React/Vite spellbook interface with:
+A responsive React JSX lore-wiki starter built from the Heöfon campaign document.
 
-- Two-page desktop tome: spell rules on the left, illustration on the right.
-- Condensed mobile tome with Spell / Illustration page switching.
-- Device-driven light and dark palettes inspired by the supplied owl artwork.
-- LocalStorage favorites saved as a personal spellbook.
-- A searchable and sortable spell index for adding spells.
-- An efficient list view for scanning saved spells.
-- Spell-image lookup by compact spell name, with school-image fallbacks.
-
-## Run
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Add spell data
+Open the local URL shown by Vite.
 
-Paste spell objects into the arrays in `src/data/cantrips.js`, `src/data/level1.js`, through `src/data/level9.js`.
+## Important files
 
-The expected spell illustration naming scheme is compact lowercase with punctuation, spaces, and hyphens removed:
+- `src/data/lore.js` — central navigation and automatic lore-link dictionary.
+- `src/components/AutoLoreText.jsx` — converts known lore terms into links.
+- `src/components/Layout.jsx` — fixed desktop navigation and mobile drawer.
+- `src/pages/` — individual wiki pages and anchor sections.
+- `src/styles/global.css` — complete visual theme and responsive styling.
 
-- `Binding Ice` → `public/assets/spells/bindingice.png`
-- `Arctic Breath` → `public/assets/spells/arcticbreath.png`
+## Deep links
 
-When a spell-specific image is missing, the interface automatically attempts a school fallback:
+Use ordinary React Router links with hashes:
 
-- `Evocation` → `public/assets/spells/evocation.png`
-- `Conjuration` → `public/assets/spells/conjuration.png`
+```jsx
+<Link to="/three-dawns#sunny">Sunny Lou Raybeam</Link>
+```
 
-You may also place `generic.png` in the same folder if you want a universal final fallback.
+The layout automatically scrolls to the matching section after navigation.
+
+## Add a new automatic lore term
+
+Add it to `linkMap` in `src/data/lore.js`:
+
+```js
+'king’s tree': { to: '/governance#kings-tree' }
+```
+
+Then wrap lore paragraphs with `<AutoLoreText>`.
