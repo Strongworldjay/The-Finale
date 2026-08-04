@@ -5,11 +5,6 @@ import RichText from '../components/RichText.jsx';
 import { ArrowIcon } from '../components/icons.jsx';
 import { articleBySlug } from '../data/articles.js';
 
-function SourceBadge({ source }) {
-  const type = source.toLocaleLowerCase().replaceAll(' ', '-');
-  return <span className={`source-badge source-${type}`}>{source}</span>;
-}
-
 export default function ArticlePage() {
   const { slug } = useParams();
   const article = articleBySlug[slug];
@@ -54,21 +49,17 @@ export default function ArticlePage() {
           )}
           <nav className="article-toc" aria-label="Contents">
             <span>Contents</span>
-            {article.sections.map((section, index) => (
-              <a key={section.id} href={`#${section.id}`}><b>{String(index + 1).padStart(2, '0')}</b>{section.title}</a>
+            {article.sections.map((section) => (
+              <a key={section.id} href={`#${section.id}`}>{section.title}</a>
             ))}
           </nav>
         </aside>
 
         <div className="article-content">
-          {article.sections.map((section, index) => (
+          {article.sections.map((section) => (
             <section id={section.id} className="article-section" key={section.id}>
-              <div className="section-heading">
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <div>
-                  <h2>{section.title}</h2>
-                  <SourceBadge source={section.source} />
-                </div>
+              <div className="section-heading article-section-heading">
+                <h2>{section.title}</h2>
               </div>
 
               {section.paragraphs.map((paragraph) => (
@@ -96,7 +87,6 @@ export default function ArticlePage() {
 
               {section.note && (
                 <aside className="archive-note">
-                  <span>{section.source}</span>
                   <p><RichText currentSlug={article.slug}>{section.note}</RichText></p>
                 </aside>
               )}

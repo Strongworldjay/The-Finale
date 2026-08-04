@@ -1111,7 +1111,7 @@ export const articles = [
       "Raybeam Crown",
       "House Raybeam"
     ],
-    "hero": "/images/couple.png",
+    "hero": "/images/dynasty.png",
     "heroPosition": "center",
     "infobox": [
       [
