@@ -93,7 +93,7 @@ export const teams = [
   {
     id: 'red',
     group: 'The Real Gs',
-    name: 'Red — The Protector',
+    name: 'Red',
     short: 'RD',
     subtitle: 'Young goliath protector & heavy muscle',
     description: 'A gentle young goliath with immense strength and fierce loyalty. Red may not follow complicated plans easily, but when told who needs protecting, he is exceptionally hard to move.',

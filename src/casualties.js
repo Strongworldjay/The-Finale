@@ -8,11 +8,11 @@ export const isForceGroup = force => Boolean(force?.isGroup)
 const injuries = [
   'lost their left leg', 'lost their right leg', 'lost both legs',
   'lost their left arm', 'lost their right arm', 'lost an eye',
-  'suffered a shattered shoulder', 'suffered a serious spinal injury'
+  'brain injury (Memory)', 'paralyzed from waist down', 'Permanently Blinded', 'brain injury (disabled)npm run'
 ]
 const otherWounds = [
-  'suffered a severe concussion', 'suffered broken ribs',
-  'sustained severe burns', 'was left badly wounded and unable to continue fighting'
+  'broke right leg', 'broke right arm', 'broke ribs',
+  'broke left leg', 'broke left arm'
 ]
 
 const profiles = {
